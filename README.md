@@ -1,7 +1,6 @@
 #  Paytm Monorepo
 
-
-![Untitled-2024-11-08-1914 excalidraw](https://github.com/user-attachments/assets/851ba262-c771-4e9e-b15c-c101c2db9871)
+![Payment Flow](https://github.com/user-attachments/assets/e8c90501-4f40-4d76-9d53-f01101c0528e)
 
 Link :- https://excalidraw.com/#json=aMcPz_2XQaXQdPCTvThGi,-ErfqwLg6H0T-Mo6H4O9Mw
 
