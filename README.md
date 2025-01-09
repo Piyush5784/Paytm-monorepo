@@ -1,20 +1,30 @@
-- Clone the repo
+# Paytm Monorepo
 
-```jsx
-git clone https://github.com/100xdevs-cohort-2/week-17-final-code
-```
+![Payment Flow](https://github.com/user-attachments/assets/e8c90501-4f40-4d76-9d53-f01101c0528e)
 
-- npm install
-- Run postgres either locally or on the cloud (neon.tech)
+Link :- https://excalidraw.com/#json=aMcPz_2XQaXQdPCTvThGi,-ErfqwLg6H0T-Mo6H4O9Mw
 
-```jsx
-docker run  -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
-```
+## Steps to init
 
-- Copy over all .env.example files to .env
-- Update .env files everywhere with the right db url
-- Go to `packages/db`
-    - npx prisma migrate dev
-    - npx prisma db seed
-- Go to `apps/user-app` , run `npm run dev`
-- Try logging in using phone - 1111111111 , password - alice (See `seed.ts`)
+- git clone https://github.com/Piyush5784/Paytm-monorepo
+- add env in packages/db folder
+  ```bash
+  DATABASE_URL = "postgreSQL"
+  ```
+- npx prisma generate (in packages/db folder)
+- add env in apps/user-app and apps/merchant
+
+  ```bash
+  JWT_SECRET = "mysecpassword"
+  NEXTAUTH_URL = "http://localhost:3001"
+  ```
+
+  ```bash
+  NEXTAUTH_URL = "http://localhost:3000"
+  NEXTAUTH_SECRET = "mysecpassword2"
+
+  GOOGLE_CLIENT_ID = ""
+  GOOGLE_CLIENT_SECRET = ""
+  ```
+
+- npm run dev

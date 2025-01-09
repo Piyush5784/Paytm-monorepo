@@ -52,4 +52,8 @@ enum OnRampStatus {
   Success
   Failure
   Processing
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c774d030d731be0a12bbd0d734836c8e3c664182
